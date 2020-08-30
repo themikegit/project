@@ -1,9 +1,10 @@
 module.exports = {
-  name: 'London Night and Day',
-  shortName: '',
-  description: 'A bold, minimal theme for Gatsby, focused on clean typography & beautiful imagery',
-  url: 'https://www.jooplaan.com', // Domain of your site without prefix!
-  prefix: '/',
-  author: 'jooplaan',
-  twitter: ''
-}
+	name: "Rostovniki",
+	shortName: "",
+	description:
+		"Partner in building your digital presence.Complete web and graphic solution for small business",
+	url: "https://www.jooplaan.com", // Domain of your site without prefix!
+	prefix: "/",
+	author: "rostovniki",
+	twitter: "",
+};
