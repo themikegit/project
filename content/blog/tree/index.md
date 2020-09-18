@@ -1,14 +1,13 @@
 ---
-title: Clean lines
-date: "2019-05-05"
-thumbnail: ./tree-03.png
-description: Let your hair down and paint the town red
+title: Geometric tree logo
+date: "2019-05-01"
+thumbnail: ./tree.png
 ---
 
-![Clean lines](./clem-onojeghuo-207792-unsplash.jpg)
+![Cute dog](./charles-deluvio-540415-unsplash.jpg)
 
-![Clean lines](./mitch-lensink-588486-unsplash.jpg)
+![Cute dog](./charles-deluvio-540418-unsplash.jpg)
 
-![Clean lines](./ricardo-gomez-angel-180819-unsplash.jpg)
+![Cute dog](./charles-deluvio-540420-unsplash.jpg)
 
-![Clean lines](./joanna-kosinska-254406-unsplash.jpg)
+![Cute dog](./charles-deluvio-547196-unsplash.jpg)

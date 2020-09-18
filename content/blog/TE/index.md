@@ -1,14 +1,14 @@
 ---
-title: Get fruity
-date: "2019-05-02"
-thumbnail: ./te-03.png
-description: A deep investigation into the pastel properties of colourful fruit and their psychological effects on hamsters
+title: T & E monogram
+date: "2015-05-06T23:46:37.121Z"
+thumbnail: te.png
 ---
 
-![Fruits](./mike-dorner-173503-unsplash.jpg)
+Wow! I love blogging so much already.
 
-<div class="kg-card kg-image-card kg-width-wide">
+Did you know that "despite its name, salted duck eggs can also be made from
+chicken eggs, though the taste and texture will be somewhat different, and the
+egg yolk will be less rich."?
+([Wikipedia Link](http://en.wikipedia.org/wiki/Salted_duck_egg))
 
-![Fruits](./mike-dorner-173504-unsplash.jpg)
-
-</div>
+Yeah, I didn't either.
