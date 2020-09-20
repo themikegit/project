@@ -19,7 +19,13 @@ const TagIndex = ({ data }) => {
 			<header className="tag-page-head">
 				<h1 className="page-head-title">Get in Touch!</h1>
 			</header>
-			<form name="contact" method="POST" data-netlify="true">
+			<form
+				name="contact"
+				method="POST"
+				data-netlify="true"
+				data-netlify-honeypot="bot-field"
+			>
+				<input type="hidden" name="form-name" value="contact" />
 				<div className="row gtr-uniform">
 					<div className="col-6 col-12-xsmall">
 						<input
