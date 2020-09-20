@@ -617,7 +617,6 @@ body {
 .post-content {
 	max-width: 720px;
 	margin: 0 auto;
-	padding: 6vw 0;
 }
 
 .post-content-header {
@@ -665,6 +664,7 @@ body {
 .post-content-body {
 	font-size: 1.9rem;
 	line-height: 1.65em;
+	text-align: center;
 }
 @media (max-width: 500px) {
 	.post-content-body {

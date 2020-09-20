@@ -11,15 +11,15 @@ import "../style/normalize.css";
 import "../style/all.scss";
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }, location) => {
-	const siteTitle = "Home";
+	const siteTitle = data.site.siteMetadata.title;
 	const posts = data.allMarkdownRemark.edges;
 	let postCounter = 0;
 
 	return (
 		<Layout title={siteTitle}>
 			<SEO
-				title="Blog"
-				keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`]}
+				title="Logo"
+				keywords={[`portfolio`, `desing`, `logo`, `modern`, `clean`]}
 			/>
 			{/* <Bio /> */}
 			{data.site.siteMetadata.description && (

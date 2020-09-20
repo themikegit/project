@@ -49,14 +49,6 @@ const Layout = (props) => {
 					<div className="site-head-right">
 						<div className="social-links">
 							<a
-								href="https://www.facebook.com"
-								title="Dribble"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								Dribble
-							</a>
-							<a
 								href="https://twitter.com"
 								title="Twitter"
 								target="_blank"
@@ -78,7 +70,7 @@ const Layout = (props) => {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								GitHub
+								Dribble
 							</a>
 							<a
 								href="https://github.com/jooplaan/gatsby-london-night-and-day"

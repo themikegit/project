@@ -5,7 +5,10 @@ const StaticLogo = () => (
 	<StaticQuery
 		query={graphql`
 			query allimgQuery {
-				source: allFile(filter: { absolutePath: { regex: "/assets/" } }) {
+				source: allFile(
+					filter: { absolutePath: { regex: "/assets/" } }
+					sort: { order: ASC, fields: name }
+				) {
 					edges {
 						node {
 							childImageSharp {

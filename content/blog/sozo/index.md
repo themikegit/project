@@ -1,13 +1,11 @@
 ---
-title: Running club
+title: Running club logo
 date: "2020-05-02"
 thumbnail: ./sozo.png
 ---
 
-![Fruits](./mike-dorner-173503-unsplash.jpg)
+![logo](./inn.jpg)
 
-<div class="kg-card kg-image-card kg-width-wide">
-
-![Fruits](./mike-dorner-173504-unsplash.jpg)
-
-</div>
+<p>
+Sozo logo is created for running clug. Choosing this simple approach can focus attention to certain aspects. Of course, central part is a silhouette of a runner in letter Z.
+</p>
