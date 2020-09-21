@@ -15,9 +15,9 @@ const TagIndex = ({ data }) => {
 
 	return (
 		<Layout title={siteTitle}>
-			<SEO title="Contact" />
+			<SEO title="Brief" />
 			<header className="tag-page-head">
-				<h1 className="page-head-title">Get in Touch!</h1>
+				<h1 className="page-head-title">Design Brief</h1>
 			</header>
 			<form
 				name="contact"
@@ -28,23 +28,25 @@ const TagIndex = ({ data }) => {
 				<input type="hidden" name="form-name" value="contact" />
 				<div className="row gtr-uniform">
 					<div className="col-6 col-12-xsmall">
+						<h6>Company Name</h6>
 						<input
 							type="text"
 							name="demo-name"
 							id="demo-name"
-							placeholder="Name"
+							placeholder="Name you want to include in the logo"
 						/>
 					</div>
 					<div className="col-6 col-12-xsmall">
+						<h6>Company Slogan</h6>
 						<input
-							type="email"
+							type="text"
 							name="demo-email"
 							id="demo-email"
-							placeholder="Email"
+							placeholder="If any. Optional"
 						/>
 					</div>
 					{/* Break */}
-					<div className="col-12">
+					{/* <div className="col-12">
 						<select name="demo-category" id="demo-category">
 							<option value>- Category -</option>
 							<option value={1}>Logo Desing</option>
@@ -52,49 +54,26 @@ const TagIndex = ({ data }) => {
 							<option value={1}>Web development</option>
 							<option value={1}>Other</option>
 						</select>
-					</div>
+					</div> */}
 					{/* Break */}
-					<div className="col-4 col-12-small">
-						<input
-							type="radio"
-							id="demo-priority-low"
-							name="demo-priority"
-							defaultChecked
-						/>
-						<label htmlFor="demo-priority-low">Low</label>
-					</div>
-					<div className="col-4 col-12-small">
-						<input
-							type="radio"
-							id="demo-priority-normal"
-							name="demo-priority"
-						/>
-						<label htmlFor="demo-priority-normal">Normal</label>
-					</div>
-					<div className="col-4 col-12-small">
-						<input type="radio" id="demo-priority-high" name="demo-priority" />
-						<label htmlFor="demo-priority-high">High</label>
-					</div>
-					{/* Break */}
-					<div className="col-6 col-12-small">
-						<input type="checkbox" id="demo-copy" name="demo-copy" />
-						<label htmlFor="demo-copy">Email me a copy</label>
-					</div>
-					<div className="col-6 col-12-small">
-						<input
-							type="checkbox"
-							id="demo-human"
-							name="demo-human"
-							defaultChecked
-						/>
-						<label htmlFor="demo-human">I am a human</label>
-					</div>
+
 					{/* Break */}
 					<div className="col-12">
+						<h6>Company Bio</h6>
 						<textarea
 							name="demo-message"
 							id="demo-message"
-							placeholder="Enter your message"
+							placeholder="The bio section is where you communicate your design goals and provide insight into your company’s culture."
+							rows={6}
+							defaultValue={""}
+						/>
+					</div>
+					<div className="col-12">
+						<h6>Mood Board</h6>
+						<textarea
+							name="demo-message"
+							id="demo-message"
+							placeholder="Here you can include link of logo applications you have in mind, photos featuring elements of other logos you like, or even a pre-existing logo your business might have that you want to evolve."
 							rows={6}
 							defaultValue={""}
 						/>

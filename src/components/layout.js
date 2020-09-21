@@ -34,10 +34,10 @@ const Layout = (props) => {
 								<Link to={`/about`}>About</Link>
 							</li>
 							<li className="nav-elements" role="menuitem">
-								<Link to={`/elements`}>How it works</Link>
+								<Link to={`/how-it-works`}>How it works</Link>
 							</li>
 							<li className="nav-tags" role="menuitem">
-								<Link to={`/tags`}>Get in Touch</Link>
+								<Link to={`/brief`}>Brief</Link>
 							</li>
 						</ul>
 					</nav>
@@ -71,14 +71,6 @@ const Layout = (props) => {
 								rel="noopener noreferrer"
 							>
 								Dribble
-							</a>
-							<a
-								href="https://github.com/jooplaan/gatsby-london-night-and-day"
-								title="GitHub"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								LinkedIn
 							</a>
 						</div>
 					</div>

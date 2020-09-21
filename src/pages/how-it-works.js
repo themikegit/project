@@ -19,7 +19,8 @@ const ElementsPage = ({ data }, location) => {
 				<div className="post-content-body">
 					<h2>Brief</h2>
 					<p>
-						The first step is to build a creative design brief. A creative
+						The first step is to build a creative{" "}
+						<a href="http://localhost:8000/brief">design brief.</a> A creative
 						design brief is a document intended for a design or development
 						project.To understand the client needs, I must ask questions and
 						develop a clear understanding of your business.s
