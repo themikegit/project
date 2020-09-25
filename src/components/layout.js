@@ -49,28 +49,28 @@ const Layout = (props) => {
 					<div className="site-head-right">
 						<div className="social-links">
 							<a
-								href="https://twitter.com"
-								title="Twitter"
+								href="https://www.upwork.com/fl/miroslavkrsmanovic"
+								title="Upwork"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								Upwork
 							</a>
 							<a
-								href="https://twitter.com"
-								title="Twitter"
+								href="https://www.freelancer.com/u/rostovniki"
+								title="Freelancer"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								Freelancer
 							</a>
 							<a
-								href="https://github.com/jooplaan/gatsby-london-night-and-day"
-								title="GitHub"
+								href="https://dribbble.com/rostovniki"
+								title="Dribbble"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								Dribble
+								Dribbble
 							</a>
 						</div>
 					</div>

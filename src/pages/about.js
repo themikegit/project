@@ -21,7 +21,7 @@ const AboutPage = ({ data }, location) => {
 						fluid={data.benchAccounting.childImageSharp.fluid}
 						className="avatar"
 					/>
-					<h2>Hi! I'm Miroslav Welcome to my portfolio.</h2>
+					<h2> &#x1F44B; Hi! I'm Miroslav.</h2>
 					<p>
 						I'm a experienced graphic designer from{" "}
 						<a target="_blank" href="https://en.wikipedia.org/wiki/Belgrade">
@@ -29,10 +29,12 @@ const AboutPage = ({ data }, location) => {
 							Belgrade!
 						</a>
 					</p>
-					<p>Main tool i use are Sketch, Figma, Photoshop and Illustrator.</p>
+					<p>
+						Main tools i use are Illustrator, Sketch, Figma, and Photoshop .
+					</p>
 					<p>
 						I can help you with Logo Design, Web Design and if you want to make
-						your site live I can help you with that too! :)
+						your site live I can help you with that too! &#x1F60E;
 					</p>
 				</div>
 			</article>

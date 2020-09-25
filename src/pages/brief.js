@@ -31,8 +31,8 @@ const TagIndex = ({ data }) => {
 						<h6>Company Name</h6>
 						<input
 							type="text"
-							name="demo-name"
-							id="demo-name"
+							name="company-name"
+							id="company-name"
 							placeholder="Name you want to include in the logo"
 						/>
 					</div>
@@ -40,29 +40,16 @@ const TagIndex = ({ data }) => {
 						<h6>Company Slogan</h6>
 						<input
 							type="text"
-							name="demo-email"
-							id="demo-email"
+							name="company-tagline"
+							id="company-tagline"
 							placeholder="If any. Optional"
 						/>
 					</div>
-					{/* Break */}
-					{/* <div className="col-12">
-						<select name="demo-category" id="demo-category">
-							<option value>- Category -</option>
-							<option value={1}>Logo Desing</option>
-							<option value={1}>WebDesign</option>
-							<option value={1}>Web development</option>
-							<option value={1}>Other</option>
-						</select>
-					</div> */}
-					{/* Break */}
-
-					{/* Break */}
 					<div className="col-12">
 						<h6>Company Bio</h6>
 						<textarea
-							name="demo-message"
-							id="demo-message"
+							name="company-bio"
+							id="company-bio"
 							placeholder="The bio section is where you communicate your design goals and provide insight into your company’s culture."
 							rows={6}
 							defaultValue={""}
@@ -71,8 +58,8 @@ const TagIndex = ({ data }) => {
 					<div className="col-12">
 						<h6>Mood Board</h6>
 						<textarea
-							name="demo-message"
-							id="demo-message"
+							name="company-board"
+							id="company-board"
 							placeholder="Here you can include link of logo applications you have in mind, photos featuring elements of other logos you like, or even a pre-existing logo your business might have that you want to evolve."
 							rows={6}
 							defaultValue={""}
