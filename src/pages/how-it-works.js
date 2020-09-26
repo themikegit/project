@@ -22,8 +22,8 @@ const ElementsPage = ({ data }, location) => {
 						The first step is to build a creative{" "}
 						<a href="http://localhost:8000/brief">design brief.</a> A creative
 						design brief is a document intended for a design or development
-						project.To understand the client needs, I must ask questions and
-						develop a clear understanding of your business.s
+						project.To understand your needs, I must ask questions and develop a
+						clear understanding of your business.
 					</p>
 					<hr />
 				</div>
@@ -31,8 +31,8 @@ const ElementsPage = ({ data }, location) => {
 					<h2>Conceptualization</h2>
 					<p>
 						Once the answers to the questionnaire are complete, I will go
-						through and create a few different concepts . Further questions may
-						arise, which can be discussed.s
+						through and create a few different concepts. Further questions may
+						arise, which can be discussed.
 					</p>
 					<hr />
 				</div>
@@ -40,26 +40,26 @@ const ElementsPage = ({ data }, location) => {
 					<h2>Drafts</h2>
 					<p>
 						At this stage, the strongest logo concepts will be collated into a
-						client presentation document.I will show how the logo looks on
-						various background colors, at different scales, and alongside some
-						logo mockups. This helps the client visualize their logo in a
-						practical use
+						presentation document.I will show how the logo looks on various
+						background colors, at different scales, and alongside some logo
+						mockups. This helps the client visualize their logo in a practical
+						use.
 					</p>
 					<hr />
 				</div>
 				<div className="post-content-body">
 					<h2>Revision</h2>
 					<p>
-						I will spend some time discussing the concepts with the client to
-						gather feedback. After that, we can move on revisions and work on
-						different color schemes.
+						I will spend some time discussing the concepts with you to gather
+						feedback. After that, we can move on revisions and work on different
+						color schemes.
 					</p>
 					<hr />
 				</div>
 				<div className="post-content-body">
 					<h2>Delivery</h2>
 					<p>
-						Everything is created in Adobe Illustrator, vector graphic.This
+						Everything is created in Adobe Illustrator - vector graphic. This
 						means that the same logo design that looks great on a business card
 						will also look perfect on a billboard.The standard files are: .AI
 						(for future editing if desired), .EPS / .PDF (for printing), .JPEG

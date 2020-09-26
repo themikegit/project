@@ -60,13 +60,13 @@ class ContentWithImage extends Component {
 	render() {
 		const { props } = this.props;
 		return (
-			<Link to={props.node.fields.slug} className="post-card-link">
+			<div className="post-card-link">
 				<div className="post-card-content">
 					<h6 className="post-card-title">
 						{props.node.frontmatter.title || props.node.fields.slug}
 					</h6>
 				</div>
-			</Link>
+			</div>
 		);
 	}
 }

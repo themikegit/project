@@ -17,16 +17,15 @@ const BlogIndex = ({ data }, location) => {
 
 	return (
 		<Layout title={siteTitle}>
-			<SEO
-				title="Logo"
-				keywords={[`portfolio`, `desing`, `logo`, `modern`, `clean`]}
-			/>
+			<SEO title="Logo" keywords={[`app`, `desing`, `UI`, `UX`, `web`]} />
 			{/* <Bio /> */}
 			{data.site.siteMetadata.description && (
 				<header className="page-head">
 					<h2 className="page-head-title">
-						{data.site.siteMetadata.description}
+						Hi there! <br /> Check out my recent stuff.
 					</h2>
+
+					<h1>&#x1F447;</h1>
 				</header>
 			)}
 			<div className="post-feed">
