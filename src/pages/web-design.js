@@ -17,7 +17,7 @@ const TagIndex = ({ data }) => {
 		<Layout title={siteTitle}>
 			<SEO title="Cooming soon!" />
 			<header className="tag-page-head">
-				<h1 className="page-head-title">cooming soon...</h1>
+				<h1 className="page-head-title">coming soon...</h1>
 			</header>
 		</Layout>
 	);

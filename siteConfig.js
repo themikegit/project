@@ -1,5 +1,5 @@
 module.exports = {
-	name: "Rostovniki",
+	name: "Brandmik",
 	shortName: "",
 	description:
 		"Hey, I'm Miroslav! Your partner in building your digital presence",

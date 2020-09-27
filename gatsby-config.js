@@ -87,7 +87,9 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-google-analytics`,
 			options: {
-				trackingId: ``,
+				trackingId: `UA-179137835-1
+				`,
+				head: `true`,
 			},
 		},
 		`gatsby-plugin-feed`,
@@ -100,7 +102,7 @@ module.exports = {
 				background_color: `#ffffff`,
 				theme_color: `#663399`,
 				display: `minimal-ui`,
-				icon: `content/other/gatsby-icon.png`,
+				icon: `content/other/favicon.png`,
 			},
 		},
 		// `gatsby-plugin-netlify`,
