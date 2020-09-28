@@ -31,10 +31,10 @@ const Layout = (props) => {
                 <Link to={`/`}>Home</Link>
               </li> */}
 							<li className="nav-about" role="menuitem">
-								<Link to={`/about`}>About</Link>
+								<Link to={`/bio`}>Bio</Link>
 							</li>
 							<li className="nav-elements" role="menuitem">
-								<Link to={`/how-it-works`}>How it works</Link>
+								<Link to={`/process`}>Process</Link>
 							</li>
 							<li className="nav-tags" role="menuitem">
 								<Link to={`/brief`}>Brief</Link>
@@ -59,22 +59,22 @@ const Layout = (props) => {
 							>
 								Upwork
 							</a>
-							<a
+							{/* <a
 								href="https://www.freelancer.com/u/rostovniki"
 								title="Freelancer"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								Freelancer
-							</a>
-							<a
+							</a> */}
+							{/* <a
 								href="https://dribbble.com/rostovniki"
 								title="Dribbble"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								Dribbble
-							</a>
+							</a> */}
 						</div>
 					</div>
 				</div>

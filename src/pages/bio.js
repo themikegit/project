@@ -23,18 +23,18 @@ const AboutPage = ({ data }, location) => {
 					/>
 					<h2> &#x1F44B; Hi! I'm Miroslav.</h2>
 					<p>
-						I'm a experienced graphic designer from{" "}
-						<a target="_blank" href="https://en.wikipedia.org/wiki/Belgrade">
-							{" "}
-							Belgrade!
-						</a>
+						graphic designer from{" "}
+						<span>
+							<a target="_blank" href="https://en.wikipedia.org/wiki/Belgrade">
+								Belgrade
+							</a>{" "}
+						</span>{" "}
 					</p>
 					<p>
-						Main tools i use are Illustrator, Sketch, Figma, and Photoshop .
-					</p>
-					<p>
-						I can help you with Logo Design, Web Design and if you want to make
-						your site live I can help you with that too! &#x1F60E;
+						I'm focused on creating custom and meaningful logos. Beside logo
+						design I'm truly enjoying creating user interfaces and websites. If
+						you want to make your site live I can help you with that too!
+						&#x1F60E;
 					</p>
 				</div>
 			</article>

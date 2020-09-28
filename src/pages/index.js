@@ -22,7 +22,7 @@ const BlogIndex = ({ data }, location) => {
 			{data.site.siteMetadata.description && (
 				<header className="page-head">
 					<h2 className="page-head-title">
-						Hi there! <br /> Check out my recent stuff.
+						&#x1F44B; Hi there! <br /> Check out my recent stuff.
 					</h2>
 
 					<h1>&#x1F447;</h1>
