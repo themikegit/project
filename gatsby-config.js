@@ -13,6 +13,13 @@ module.exports = {
 	},
 	plugins: [
 		{
+			resolve: `gatsby-plugin-google-analytics`,
+			options: {
+				trackingId: `UA-179137835-1`,
+				head: `false`,
+			},
+		},
+		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
 				path: `${__dirname}/content/blog`,
@@ -84,14 +91,7 @@ module.exports = {
 				purgeOnly: ["components/", "/main.css", "bootstrap/"], // Purge only these files/folders
 			},
 		},
-		{
-			resolve: `gatsby-plugin-google-analytics`,
-			options: {
-				trackingId: `UA-179137835-1
-				`,
-				head: `false`,
-			},
-		},
+
 		`gatsby-plugin-feed`,
 		{
 			resolve: `gatsby-plugin-manifest`,
