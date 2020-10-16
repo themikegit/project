@@ -174,7 +174,8 @@ body {
 /* ---------------------------------------------------------- */
 
 .site-head {
-	position: relative;
+	position: sticky;
+	top: 0;
 	z-index: 300;
 	margin-top: -10px;
 	font-size: 1.35rem;

@@ -1,44 +1,43 @@
 import React from "react";
-import _ from "lodash";
-import { Link } from "gatsby";
-import { graphql, StaticQuery } from "gatsby";
-
 import Layout from "../components/layout";
-import SEO from "../components/seo";
-
+import { StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 import "../style/normalize.css";
 import "../style/all.scss";
 
-const TagIndex = ({ data }) => {
-	const siteTitle = data.site.siteMetadata.title;
-	const tags = data.allMarkdownRemark.distinct;
-
-	return (
-		<Layout title={siteTitle}>
-			<SEO title="Cooming soon!" />
-			<header className="tag-page-head">
-				<h1 className="page-head-title">coming soon...</h1>
-			</header>
-		</Layout>
-	);
-};
-
-const indexQuery = graphql`
-	query {
-		site {
-			siteMetadata {
-				title
-			}
-		}
-		allMarkdownRemark {
-			distinct(field: frontmatter___tags)
-		}
-	}
-`;
-
-export default (props) => (
+const Web = () => (
 	<StaticQuery
-		query={indexQuery}
-		render={(data) => <TagIndex props data={data} />}
+		query={graphql`
+			query allWeb {
+				source: allFile(
+					filter: { absolutePath: { regex: "/web/" } }
+					sort: { order: ASC, fields: name }
+				) {
+					edges {
+						node {
+							childImageSharp {
+								fluid {
+									...GatsbyImageSharpFluid
+								}
+							}
+						}
+					}
+				}
+			}
+		`}
+		render={(data) => (
+			<Layout title={"Brandmik"}>
+				<div style={{ textAlign: "center", padding: "3em" }}>
+					{" "}
+					<h4> Web Design portfolio </h4>{" "}
+				</div>
+				<div>
+					{data.source.edges.map(({ node }, i) => (
+						<Img style={{ margin: "10%" }} fluid={node.childImageSharp.fluid} />
+					))}
+				</div>
+			</Layout>
+		)}
 	/>
 );
+export default Web;

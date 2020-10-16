@@ -41,6 +41,13 @@ module.exports = {
 			},
 		},
 		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/content/web`,
+				name: `web`,
+			},
+		},
+		{
 			resolve: `gatsby-transformer-remark`,
 			options: {
 				plugins: [
