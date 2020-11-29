@@ -13,17 +13,17 @@ const ElementsPage = ({ data }, location) => {
 
 	return (
 		<Layout title={siteTitle}>
-			<SEO title="Elements" />
+			<SEO title="How it works" />
 
 			<article className="post-content page-template no-image">
 				<div className="post-content-body">
 					<h2>Brief</h2>
 					<p>
 						The first step is to build a creative{" "}
-						<a href="http://localhost:8000/brief">design brief.</a> A creative
-						design brief is a document intended for a design or development
-						project.To understand your needs, I must ask questions and develop a
-						clear understanding of your business.
+						<a href="https://www.brandmik.com/brief">design brief.</a> A
+						creative design brief is a document intended for a design or
+						development project.To understand your needs, I must ask questions
+						and develop a clear understanding of your business.
 					</p>
 					<hr />
 				</div>
