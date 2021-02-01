@@ -9,88 +9,93 @@ import PostCard from "../components/postCard";
 
 import "../style/normalize.css";
 import "../style/all.scss";
-//TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
+
 const BlogIndex = ({ data }, location) => {
-	const siteTitle = data.site.siteMetadata.title;
-	const posts = data.allMarkdownRemark.edges;
-	let postCounter = 0;
+  const siteTitle = data.site.siteMetadata.title;
+  const posts = data.allMarkdownRemark.edges;
+  let postCounter = 0;
 
-	return (
-		<Layout title={siteTitle}>
-			<SEO title="Logo" keywords={[`app`, `desing`, `UI`, `UX`, `web`]} />
-			{/* <Bio /> */}
-			{data.site.siteMetadata.description && (
-				<header className="page-head">
-					<h2 className="page-head-title">
-						&#x1F44B; Hi there! <br /> Check out my recent stuff.
-					</h2>
+  return (
+    <Layout title={siteTitle}>
+      <SEO title="Logo" keywords={[`app`, `desing`, `UI`, `UX`, `web`]} />
+      {/* <Bio /> */}
+      {data.site.siteMetadata.description && (
+        <header className="page-head">
+          <h2 className="page-head-title">
+            &#x1F44B; Hi there! <br /> Check out my recent stuff.
+          </h2>
 
-					<h1>&#x1F447;</h1>
-				</header>
-			)}
-			<div className="post-feed">
-				{posts.map(({ node }) => {
-					postCounter++;
-					return (
-						<PostCard
-							key={node.fields.slug}
-							count={postCounter}
-							node={node}
-							postClass={`post`}
-						/>
-					);
-				})}
-			</div>
-			<div className="more-logos">
-				<Link to={"/logofolio"}>
-					<div className="circle">
-						<p>see all</p>
-					</div>
-				</Link>
-			</div>
-		</Layout>
-	);
+          <h1>&#x1F447;</h1>
+        </header>
+      )}
+      <div className="post-feed">
+        {posts.map(({ node }) => {
+          postCounter++;
+          return (
+            <PostCard
+              key={node.fields.slug}
+              count={postCounter}
+              node={node}
+              postClass={`post`}
+            />
+          );
+        })}
+      </div>
+      <div className="more-logos">
+        <Link to={"/logofolio"}>
+          <div className="circle">
+            <p>MORE LOGOS</p>
+          </div>
+        </Link>
+        <Link to={"/web-design"}>
+          <div className="circle">
+            <p>WEB DESGIN</p>
+          </div>
+        </Link>
+      </div>
+    </Layout>
+  );
 };
 
 const indexQuery = graphql`
-	query {
-		site {
-			siteMetadata {
-				title
-				description
-			}
-		}
-		allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-			edges {
-				node {
-					excerpt
-					fields {
-						slug
-					}
-					frontmatter {
-						date(formatString: "MMMM D, YYYY")
-						title
-						description
-						tags
-						thumbnail {
-							childImageSharp {
-								fluid(maxWidth: 1360) {
-									...GatsbyImageSharpFluid
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+  query {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM D, YYYY")
+            title
+            description
+            tags
+            thumbnail {
+              childImageSharp {
+                fluid(maxWidth: 1360) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 `;
 
-export default (props) => (
-	<StaticQuery
-		query={indexQuery}
-		render={(data) => (
-			<BlogIndex location={props.location} props data={data} {...props} />
-		)}
-	/>
+export default props => (
+  <StaticQuery
+    query={indexQuery}
+    render={data => (
+      <BlogIndex location={props.location} props data={data} {...props} />
+    )}
+  />
 );
