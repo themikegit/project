@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import { StaticQuery, graphql } from "gatsby";
+import { Link } from "gatsby";
 import Img from "gatsby-image";
 import "../style/normalize.css";
 import "../style/all.scss";
@@ -28,7 +29,7 @@ const PROJECT = [
   {
     name: "health+",
     description:
-      "application desgin for health app. User can search all the clinics in specific diameter. Also he can book favorites compare insurance packages and more"
+      "health app desgin. User can search all the clinics in specific diameter. Also he can book favorites compare insurance packages and more"
   },
   {
     name: "istock",
@@ -91,6 +92,13 @@ const Web = () => (
               </div>
             </div>
           ))}
+        </div>
+        <div className="more-logos">
+          <Link to={"/"}>
+            <div className="circle">
+              <p>BACK TO HOME</p>
+            </div>
+          </Link>
         </div>
       </Layout>
     )}
