@@ -5,6 +5,8 @@ import { Link } from "gatsby";
 import Img from "gatsby-image";
 import "../style/normalize.css";
 import "../style/all.scss";
+import gif_web from "../../content/gif/i.gif";
+import waste from "../../content/gif/wasteux.gif";
 
 const PROJECT = [
   {
@@ -21,11 +23,7 @@ const PROJECT = [
     description:
       "cro telecommunication company. Landing page redesign. Emphasize the pricing package. "
   },
-  {
-    name: "launch",
-    description:
-      "crm solution for sme businesses. sas product. goal is to build simple and easy to use flow."
-  },
+
   {
     name: "health+",
     description:
@@ -72,6 +70,50 @@ const Web = () => (
           <h4> Web Design portfolio </h4>{" "}
         </div>
         <div>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              paddingBottom: "20px"
+            }}
+          >
+            <div style={{ maxWidth: "49vw", flexGrow: "1" }}>
+              <img src={gif_web} alt="" />
+            </div>
+
+            <div
+              style={{ flexGrow: "1", paddingLeft: "30px", maxWidth: "30vw" }}
+            >
+              <h2>Launch</h2>
+              <p>
+                crm solution for sme businesses. sas product. goal is to build
+                simple and easy to use flow.
+              </p>
+            </div>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              paddingBottom: "20px"
+            }}
+          >
+            <div style={{ maxWidth: "49vw", flexGrow: "1" }}>
+              <img src={waste} alt="" />
+            </div>
+
+            <div
+              style={{ flexGrow: "1", paddingLeft: "30px", maxWidth: "30vw" }}
+            >
+              <h2>Launch</h2>
+              <p>
+                crm solution for sme businesses. sas product. goal is to build
+                simple and easy to use flow.
+              </p>
+            </div>
+          </div>
+
           {data.source.edges.map(({ node }, i) => (
             <div
               style={{
@@ -80,7 +122,7 @@ const Web = () => (
                 paddingBottom: "20px"
               }}
             >
-              <div style={{ maxWidth: "55vw", flexGrow: "1" }}>
+              <div style={{ maxWidth: "49vw", flexGrow: "1" }}>
                 <Img fluid={node.childImageSharp.fluid} />
               </div>
 
