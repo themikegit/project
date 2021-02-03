@@ -11,23 +11,23 @@ import waste from "../../content/gif/wasteux.gif";
 const PROJECT = [
   {
     name: "video app",
-    description: "UI design of video app. Record and upload videos."
+    description: "UI design of video app. record and upload videos."
   },
   {
     name: "crm dashboard",
     description:
-      "industree is a USA startup. It's a hybrid version of facebook and linkedin. Best from both worlds"
+      "industree is a USA startup. It's a hybrid version of facebook and linkedin. best from both worlds"
   },
   {
     name: "terrakom",
     description:
-      "cro telecommunication company. Landing page redesign. Emphasize the pricing package. "
+      "croatian telecommunication company. landing page redesign. emphasize the pricing package. "
   },
 
   {
     name: "health+",
     description:
-      "health app desgin. User can search all the clinics in specific diameter. Also he can book favorites compare insurance packages and more"
+      "health app desgin. User can search all the clinics in specific diameter. also he can book favorites compare insurance packages and more"
   },
   {
     name: "istock",
@@ -35,12 +35,25 @@ const PROJECT = [
   },
   {
     name: "inemes",
-    description: "landing page for evaluators network of Balkan."
+    description: "landing page for evaluators network of balkan."
   },
   {
     name: "trade-space",
     description:
-      "CFO services epmowered by technology. Main target: Financial experts."
+      "CFO services epmowered by technology. main target: financial experts."
+  },
+  {
+    name: "intertool",
+    description: "tool shop landing page. product category and filtering "
+  },
+  {
+    name: "mktwise analitics",
+    description:
+      "machine learning algorithms for marketing optimization landing page"
+  },
+  {
+    name: "evolving digital leadership",
+    description: "education app. track tutorial progress"
   }
 ];
 const Web = () => (
@@ -65,73 +78,52 @@ const Web = () => (
     `}
     render={data => (
       <Layout title={"Brandmik"}>
-        <div style={{ textAlign: "center", padding: "3em" }}>
-          {" "}
-          <h4> Web Design portfolio </h4>{" "}
-        </div>
-        <div>
+        <div style={{ maxWidth: "800px", margin: "5rem auto" }}>
           <div
             style={{
-              display: "flex",
-              flexWrap: "wrap",
               paddingBottom: "20px"
             }}
           >
-            <div style={{ maxWidth: "49vw", flexGrow: "1" }}>
-              <img src={gif_web} alt="" />
-            </div>
-
-            <div
-              style={{ flexGrow: "1", paddingLeft: "30px", maxWidth: "30vw" }}
-            >
+            <div>
               <h2>Launch</h2>
-              <p>
+              <p style={{ color: "#BDBDBE", maxWidth: "400px" }}>
                 crm solution for sme businesses. sas product. goal is to build
                 simple and easy to use flow.
               </p>
             </div>
+
+            <img src={gif_web} alt="" />
           </div>
 
           <div
             style={{
-              display: "flex",
-              flexWrap: "wrap",
               paddingBottom: "20px"
             }}
           >
-            <div style={{ maxWidth: "49vw", flexGrow: "1" }}>
-              <img src={waste} alt="" />
-            </div>
-
-            <div
-              style={{ flexGrow: "1", paddingLeft: "30px", maxWidth: "30vw" }}
-            >
-              <h2>Launch</h2>
-              <p>
-                crm solution for sme businesses. sas product. goal is to build
-                simple and easy to use flow.
+            <div>
+              <h2>Waste management app</h2>
+              <p style={{ color: "#BDBDBE", maxWidth: "400px" }}>
+                service to help you how to properly recycle your waste.
+                materials sorted by category
               </p>
             </div>
+
+            <img src={waste} alt="" />
           </div>
 
           {data.source.edges.map(({ node }, i) => (
             <div
               style={{
-                display: "flex",
-                flexWrap: "wrap",
                 paddingBottom: "20px"
               }}
             >
-              <div style={{ maxWidth: "49vw", flexGrow: "1" }}>
-                <Img fluid={node.childImageSharp.fluid} />
-              </div>
-
-              <div
-                style={{ flexGrow: "1", paddingLeft: "30px", maxWidth: "30vw" }}
-              >
+              <div>
                 <h2>{PROJECT[i].name}</h2>
-                <p>{PROJECT[i].description}</p>
+                <p style={{ color: "#BDBDBE", maxWidth: "400px" }}>
+                  {PROJECT[i].description}
+                </p>
               </div>
+              <Img fluid={node.childImageSharp.fluid} />
             </div>
           ))}
         </div>
