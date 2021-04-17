@@ -54,6 +54,10 @@ const PROJECT = [
   {
     name: "evolving digital leadership",
     description: "education app. track tutorial progress"
+  },
+    {
+    name: "crypto",
+    description: "cryptocurrency portfolio website. check the latest crypto trends"
   }
 ];
 const Web = () => (
