@@ -120,15 +120,7 @@ const Web = () => (
             <img src={waste} alt="" />
           </div>
 
-   <div>
-              <h2>Project management web app</h2>
-              <p style={{ color: "#BDBDBE", maxWidth: "400px" }}>
-               create new projects and track team activity
-              </p>
-            </div>
 
-            <img src={dashboard} alt="" />
-          </div>
 
           {data.source.edges.map(({ node }, i) => (
             <div
