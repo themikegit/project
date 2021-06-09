@@ -7,6 +7,7 @@ import "../style/normalize.css";
 import "../style/all.scss";
 import gif_web from "../../content/gif/i.gif";
 import waste from "../../content/gif/wasteux.gif";
+import dashboard from "../../content/gif/ddd.gif";
 
 const PROJECT = [
   {
@@ -113,6 +114,16 @@ const Web = () => (
             </div>
 
             <img src={waste} alt="" />
+          </div>
+
+   <div>
+              <h2>Project management web app</h2>
+              <p style={{ color: "#BDBDBE", maxWidth: "400px" }}>
+               create new projects and track team activity
+              </p>
+            </div>
+
+            <img src={dashboard} alt="" />
           </div>
 
           {data.source.edges.map(({ node }, i) => (
