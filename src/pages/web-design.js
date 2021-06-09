@@ -59,6 +59,10 @@ const PROJECT = [
     {
     name: "crypto",
     description: "cryptocurrency portfolio website. check the latest crypto trends"
+  },
+    {
+    name: "game landing page",
+    description: "sci-fi game landing page quick intro"
   }
 ];
 const Web = () => (
