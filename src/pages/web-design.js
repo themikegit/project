@@ -121,6 +121,22 @@ const Web = () => (
           </div>
 
 
+         <div
+            style={{
+              paddingBottom: "20px"
+            }}
+          >
+            <div>
+              <h2>Project management</h2>
+              <p style={{ color: "#BDBDBE", maxWidth: "400px" }}>
+                create projects and track team activites
+              </p>
+            </div>
+
+            <img src={dashboard} alt="" />
+          </div>
+
+
 
           {data.source.edges.map(({ node }, i) => (
             <div
